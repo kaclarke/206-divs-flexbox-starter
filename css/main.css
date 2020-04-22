@@ -99,24 +99,66 @@ textarea {
 html {
   background-color: #e0e0d1;
   height: 100%;
+  width: 100%;
 }
 
 body {
     font-family: 'Bellota', cursive;
-    padding: 2em;
+    color: #001a00;
+    background-image: url('../img/bkgd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 2em;
     font-size: 1.25em;
     height: 100%;
 }
 
+header {
+  background-color: none;
+  height: 100px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  background-color: none;
+  height: 100px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer {
+    background-color: none;
+    height: 70px;
+    width: 100%;
+    margin: 40 0px 0px 0px;
+    padding: 0px;
+}
+
+header,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,25 +166,45 @@ body {
   color: #001a00;
   line-height: 1.2em;
   font-size: 1.6em;
-  background-color: #e0e0d1;
+  background-color: rgb(224, 224, 209, 0.5);
   border: 7px outset #004d00;
-  height: 400px;
+  height: 300px;
   width: 30%;
   padding: 5px;
   margin: 0px;
 }
 
+h1 {
+    font-size: 2.5em;
+    color: #001a00;
+    background-color: rgb(224, 224, 209, 0.5);
+    margin: 0px;
+    padding: 0px;
+}
 h2 {
-    font-size: 1.4em;
+    font-size: 1.6em;
+    color: #001a00;
+    background-color: rgb(224, 224, 209, 0.5);
+    margin: 0px;
+    padding: 0px;
+}
+h4 {
+    font-size: 1.1em;
+    margin: 0px;
+    padding: 0px;
+}
+h5 {
+    font-size: 1em;
     margin: 0px;
     padding: 0px;
 }
 p {
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 ul {
     list-style-type: none;
-    text-align: left;
+    width: 100%;
+    text-align: center;
     padding: 0px 20px 0px 10px;
     margin: 0px 0px 70px 0px;
 }
